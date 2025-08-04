@@ -9,3 +9,4 @@ echo "# $repoName" >> README.md
 git init
 git add .
 git commit -m "First commit"
+curl -u DiDTech https://api.github.com/user/repos -d '{"name": "'"$repoName"'", "private":false}'
